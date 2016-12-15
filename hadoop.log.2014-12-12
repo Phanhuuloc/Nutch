@@ -1,0 +1,239 @@
+2014-12-12 17:14:22,252 INFO  crawl.InjectorJob - InjectorJob: starting at 2014-12-12 17:14:22
+2014-12-12 17:14:22,252 INFO  crawl.InjectorJob - InjectorJob: Injecting urlDir: E:/huy/urls
+2014-12-12 17:14:22,579 INFO  common.Version - Hibernate Commons Annotations 3.2.0.Final
+2014-12-12 17:14:22,583 INFO  cfg.Environment - Hibernate 3.6.3.Final
+2014-12-12 17:14:22,585 INFO  cfg.Environment - hibernate.properties not found
+2014-12-12 17:14:22,587 INFO  cfg.Environment - Bytecode provider name : javassist
+2014-12-12 17:14:22,590 INFO  cfg.Environment - using JDK 1.4 java.sql.Timestamp handling
+2014-12-12 17:14:22,642 INFO  cfg.Configuration - configuring from resource: hibernate.cfg.xml
+2014-12-12 17:14:22,642 INFO  cfg.Configuration - Configuration resource: hibernate.cfg.xml
+2014-12-12 17:14:22,756 WARN  util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2014-12-12 17:14:22,786 INFO  cfg.Configuration - Configured SessionFactory: null
+2014-12-12 17:14:22,817 INFO  cfg.Configuration - Hibernate Validator not found: ignoring
+2014-12-12 17:14:22,823 INFO  search.HibernateSearchEventListenerRegister - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2014-12-12 17:14:22,825 INFO  connection.ConnectionProviderFactory - Initializing connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2014-12-12 17:14:22,826 INFO  connection.C3P0ConnectionProvider - C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://192.168.1.200:3306/atexpats6
+2014-12-12 17:14:22,826 INFO  connection.C3P0ConnectionProvider - Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, characterEncoding=utf8}
+2014-12-12 17:14:22,826 INFO  connection.C3P0ConnectionProvider - autocommit mode: false
+2014-12-12 17:14:22,846 INFO  log.MLog - MLog clients using log4j logging.
+2014-12-12 17:14:23,054 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2014-12-12 17:14:23,110 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@89772d1e [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@91a46b10 [ acquireIncrement -> 1, acquireRetryAttempts -> 3, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge14996h77zql1k6vlb1|29f93b, idleConnectionTestPeriod -> 300, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 5000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@3a185d52 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge14996h77zql1k6vlb1|dc4c81, jdbcUrl -> jdbc:mysql://192.168.1.200:3306/atexpats6, properties -> {useUnicode=true, user=******, password=******, CharSet=utf8, characterEncoding=utf8} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge14996h77zql1k6vlb1|749436, numHelperThreads -> 3 ]
+2014-12-12 17:14:23,574 INFO  dialect.Dialect - Using dialect: org.hibernate.dialect.MySQLInnoDBDialect
+2014-12-12 17:14:23,588 INFO  jdbc.JdbcSupportLoader - Disabling contextual LOB creation as createClob() method threw error : java.lang.AbstractMethodError: com.mchange.v2.c3p0.impl.NewProxyConnection.createClob()Ljava/sql/Clob;
+2014-12-12 17:14:23,588 INFO  cfg.SettingsFactory - Database ->
+       name : MySQL
+    version : 5.6.13
+      major : 5
+      minor : 6
+2014-12-12 17:14:23,588 INFO  cfg.SettingsFactory - Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.18 ( Revision: tonci.grgin@oracle.com-20110930151701-jfj14ddfq48ifkfq )
+      major : 5
+      minor : 1
+2014-12-12 17:14:23,591 INFO  transaction.TransactionFactoryFactory - Using default transaction strategy (direct JDBC transactions)
+2014-12-12 17:14:23,592 INFO  transaction.TransactionManagerLookupFactory - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2014-12-12 17:14:23,592 INFO  cfg.SettingsFactory - Automatic flush during beforeCompletion(): disabled
+2014-12-12 17:14:23,592 INFO  cfg.SettingsFactory - Automatic session close at end of transaction: disabled
+2014-12-12 17:14:23,592 INFO  cfg.SettingsFactory - JDBC batch size: 15
+2014-12-12 17:14:23,593 INFO  cfg.SettingsFactory - JDBC batch updates for versioned data: disabled
+2014-12-12 17:14:23,593 INFO  cfg.SettingsFactory - Scrollable result sets: enabled
+2014-12-12 17:14:23,593 INFO  cfg.SettingsFactory - JDBC3 getGeneratedKeys(): enabled
+2014-12-12 17:14:23,593 INFO  cfg.SettingsFactory - Connection release mode: auto
+2014-12-12 17:14:23,593 INFO  cfg.SettingsFactory - Maximum outer join fetch depth: 2
+2014-12-12 17:14:23,593 INFO  cfg.SettingsFactory - Default batch fetch size: 1
+2014-12-12 17:14:23,593 INFO  cfg.SettingsFactory - Generate SQL with comments: disabled
+2014-12-12 17:14:23,593 INFO  cfg.SettingsFactory - Order SQL updates by primary key: disabled
+2014-12-12 17:14:23,594 INFO  cfg.SettingsFactory - Order SQL inserts for batching: disabled
+2014-12-12 17:14:23,594 INFO  cfg.SettingsFactory - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2014-12-12 17:14:23,598 INFO  ast.ASTQueryTranslatorFactory - Using ASTQueryTranslatorFactory
+2014-12-12 17:14:23,598 INFO  cfg.SettingsFactory - Query language substitutions: {}
+2014-12-12 17:14:23,598 INFO  cfg.SettingsFactory - JPA-QL strict compliance: disabled
+2014-12-12 17:14:23,598 INFO  cfg.SettingsFactory - Second-level cache: enabled
+2014-12-12 17:14:23,598 INFO  cfg.SettingsFactory - Query cache: disabled
+2014-12-12 17:14:23,598 INFO  cfg.SettingsFactory - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2014-12-12 17:14:23,598 INFO  cfg.SettingsFactory - Optimize cache for minimal puts: disabled
+2014-12-12 17:14:23,598 INFO  cfg.SettingsFactory - Structured second-level cache entries: disabled
+2014-12-12 17:14:23,601 INFO  cfg.SettingsFactory - Echoing all SQL to stdout
+2014-12-12 17:14:23,602 INFO  cfg.SettingsFactory - Statistics: disabled
+2014-12-12 17:14:23,602 INFO  cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+2014-12-12 17:14:23,602 INFO  cfg.SettingsFactory - Default entity-mode: pojo
+2014-12-12 17:14:23,602 INFO  cfg.SettingsFactory - Named query checking : enabled
+2014-12-12 17:14:23,602 INFO  cfg.SettingsFactory - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2014-12-12 17:14:23,615 INFO  impl.SessionFactoryImpl - building session factory
+2014-12-12 17:14:23,622 INFO  type.BasicTypeRegistry - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@1332109
+2014-12-12 17:14:23,622 INFO  type.BasicTypeRegistry - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1bde3d2
+2014-12-12 17:14:23,622 INFO  type.BasicTypeRegistry - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@1b80d9b
+2014-12-12 17:14:23,622 INFO  type.BasicTypeRegistry - Type registration [blob] overrides previous : org.hibernate.type.BlobType@856d3b
+2014-12-12 17:14:23,622 INFO  type.BasicTypeRegistry - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@856d3b
+2014-12-12 17:14:23,622 INFO  type.BasicTypeRegistry - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@1c67b54
+2014-12-12 17:14:23,622 INFO  type.BasicTypeRegistry - Type registration [clob] overrides previous : org.hibernate.type.ClobType@1caefb0
+2014-12-12 17:14:23,622 INFO  type.BasicTypeRegistry - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@1caefb0
+2014-12-12 17:14:23,622 INFO  type.BasicTypeRegistry - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@3e1d25
+2014-12-12 17:14:23,666 INFO  impl.SessionFactoryObjectFactory - Not binding factory to JNDI, no JNDI name configured
+2014-12-12 17:14:23,670 INFO  hbm2ddl.SchemaUpdate - Running hbm2ddl schema update
+2014-12-12 17:14:23,670 INFO  hbm2ddl.SchemaUpdate - fetching database metadata
+2014-12-12 17:14:23,675 INFO  hbm2ddl.SchemaUpdate - updating schema
+2014-12-12 17:14:23,680 INFO  hbm2ddl.SchemaUpdate - schema update complete
+2014-12-12 17:14:23,814 INFO  crawl.InjectorJob - Working directory: /D:/working/application/webapps2/WebCrawler
+2014-12-12 17:14:23,814 INFO  crawl.InjectorJob - Current directory: /D:/working/application/webapps2/WebCrawler/E:/huy/urls
+2014-12-12 17:14:23,814 INFO  crawl.InjectorJob - File name: /D:/working/application/webapps2/WebCrawler/E:/huy/urls/url.txt
+2014-12-12 17:14:23,816 ERROR crawl.InjectorJob - InjectorJob: java.io.FileNotFoundException: D:\working\application\webapps2\WebCrawler\E:\huy\urls\url.txt (The filename, directory name, or volume label syntax is incorrect)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:70)
+	at org.apache.nutch.crawl.InjectorJob.run(InjectorJob.java:315)
+	at org.apache.nutch.crawl.InjectorJob.inject(InjectorJob.java:367)
+	at org.apache.nutch.crawl.InjectorJob.run(InjectorJob.java:389)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at org.apache.nutch.crawl.InjectorJob.main(InjectorJob.java:398)
+
+2014-12-12 17:15:42,835 INFO  crawl.InjectorJob - InjectorJob: starting at 2014-12-12 17:15:42
+2014-12-12 17:15:42,835 INFO  crawl.InjectorJob - InjectorJob: Injecting urlDir: urls
+2014-12-12 17:15:43,059 INFO  common.Version - Hibernate Commons Annotations 3.2.0.Final
+2014-12-12 17:15:43,063 INFO  cfg.Environment - Hibernate 3.6.3.Final
+2014-12-12 17:15:43,064 INFO  cfg.Environment - hibernate.properties not found
+2014-12-12 17:15:43,066 INFO  cfg.Environment - Bytecode provider name : javassist
+2014-12-12 17:15:43,069 INFO  cfg.Environment - using JDK 1.4 java.sql.Timestamp handling
+2014-12-12 17:15:43,120 INFO  cfg.Configuration - configuring from resource: hibernate.cfg.xml
+2014-12-12 17:15:43,120 INFO  cfg.Configuration - Configuration resource: hibernate.cfg.xml
+2014-12-12 17:15:43,157 WARN  util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2014-12-12 17:15:43,176 INFO  cfg.Configuration - Configured SessionFactory: null
+2014-12-12 17:15:43,205 INFO  cfg.Configuration - Hibernate Validator not found: ignoring
+2014-12-12 17:15:43,211 INFO  search.HibernateSearchEventListenerRegister - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2014-12-12 17:15:43,213 INFO  connection.ConnectionProviderFactory - Initializing connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2014-12-12 17:15:43,214 INFO  connection.C3P0ConnectionProvider - C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://192.168.1.200:3306/atexpats6
+2014-12-12 17:15:43,214 INFO  connection.C3P0ConnectionProvider - Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, characterEncoding=utf8}
+2014-12-12 17:15:43,214 INFO  connection.C3P0ConnectionProvider - autocommit mode: false
+2014-12-12 17:15:43,231 INFO  log.MLog - MLog clients using log4j logging.
+2014-12-12 17:15:43,312 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2014-12-12 17:15:43,364 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@880792b3 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@9034d0a5 [ acquireIncrement -> 1, acquireRetryAttempts -> 3, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge14996h79pquhxavus|29f93b, idleConnectionTestPeriod -> 300, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 5000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@38a8c2e7 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge14996h79pquhxavus|dc4c81, jdbcUrl -> jdbc:mysql://192.168.1.200:3306/atexpats6, properties -> {useUnicode=true, user=******, password=******, CharSet=utf8, characterEncoding=utf8} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge14996h79pquhxavus|749436, numHelperThreads -> 3 ]
+2014-12-12 17:15:43,578 INFO  dialect.Dialect - Using dialect: org.hibernate.dialect.MySQLInnoDBDialect
+2014-12-12 17:15:43,589 INFO  jdbc.JdbcSupportLoader - Disabling contextual LOB creation as createClob() method threw error : java.lang.AbstractMethodError: com.mchange.v2.c3p0.impl.NewProxyConnection.createClob()Ljava/sql/Clob;
+2014-12-12 17:15:43,589 INFO  cfg.SettingsFactory - Database ->
+       name : MySQL
+    version : 5.6.13
+      major : 5
+      minor : 6
+2014-12-12 17:15:43,589 INFO  cfg.SettingsFactory - Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.18 ( Revision: tonci.grgin@oracle.com-20110930151701-jfj14ddfq48ifkfq )
+      major : 5
+      minor : 1
+2014-12-12 17:15:43,592 INFO  transaction.TransactionFactoryFactory - Using default transaction strategy (direct JDBC transactions)
+2014-12-12 17:15:43,593 INFO  transaction.TransactionManagerLookupFactory - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2014-12-12 17:15:43,593 INFO  cfg.SettingsFactory - Automatic flush during beforeCompletion(): disabled
+2014-12-12 17:15:43,593 INFO  cfg.SettingsFactory - Automatic session close at end of transaction: disabled
+2014-12-12 17:15:43,593 INFO  cfg.SettingsFactory - JDBC batch size: 15
+2014-12-12 17:15:43,593 INFO  cfg.SettingsFactory - JDBC batch updates for versioned data: disabled
+2014-12-12 17:15:43,594 INFO  cfg.SettingsFactory - Scrollable result sets: enabled
+2014-12-12 17:15:43,594 INFO  cfg.SettingsFactory - JDBC3 getGeneratedKeys(): enabled
+2014-12-12 17:15:43,594 INFO  cfg.SettingsFactory - Connection release mode: auto
+2014-12-12 17:15:43,594 INFO  cfg.SettingsFactory - Maximum outer join fetch depth: 2
+2014-12-12 17:15:43,594 INFO  cfg.SettingsFactory - Default batch fetch size: 1
+2014-12-12 17:15:43,594 INFO  cfg.SettingsFactory - Generate SQL with comments: disabled
+2014-12-12 17:15:43,594 INFO  cfg.SettingsFactory - Order SQL updates by primary key: disabled
+2014-12-12 17:15:43,594 INFO  cfg.SettingsFactory - Order SQL inserts for batching: disabled
+2014-12-12 17:15:43,596 INFO  cfg.SettingsFactory - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2014-12-12 17:15:43,598 INFO  ast.ASTQueryTranslatorFactory - Using ASTQueryTranslatorFactory
+2014-12-12 17:15:43,598 INFO  cfg.SettingsFactory - Query language substitutions: {}
+2014-12-12 17:15:43,598 INFO  cfg.SettingsFactory - JPA-QL strict compliance: disabled
+2014-12-12 17:15:43,598 INFO  cfg.SettingsFactory - Second-level cache: enabled
+2014-12-12 17:15:43,598 INFO  cfg.SettingsFactory - Query cache: disabled
+2014-12-12 17:15:43,598 INFO  cfg.SettingsFactory - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2014-12-12 17:15:43,599 INFO  cfg.SettingsFactory - Optimize cache for minimal puts: disabled
+2014-12-12 17:15:43,599 INFO  cfg.SettingsFactory - Structured second-level cache entries: disabled
+2014-12-12 17:15:43,602 INFO  cfg.SettingsFactory - Echoing all SQL to stdout
+2014-12-12 17:15:43,602 INFO  cfg.SettingsFactory - Statistics: disabled
+2014-12-12 17:15:43,602 INFO  cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+2014-12-12 17:15:43,603 INFO  cfg.SettingsFactory - Default entity-mode: pojo
+2014-12-12 17:15:43,603 INFO  cfg.SettingsFactory - Named query checking : enabled
+2014-12-12 17:15:43,603 INFO  cfg.SettingsFactory - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2014-12-12 17:15:43,615 INFO  impl.SessionFactoryImpl - building session factory
+2014-12-12 17:15:43,622 INFO  type.BasicTypeRegistry - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@1bde3d2
+2014-12-12 17:15:43,622 INFO  type.BasicTypeRegistry - Type registration [clob] overrides previous : org.hibernate.type.ClobType@1b80d9b
+2014-12-12 17:15:43,622 INFO  type.BasicTypeRegistry - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@1b80d9b
+2014-12-12 17:15:43,622 INFO  type.BasicTypeRegistry - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@856d3b
+2014-12-12 17:15:43,622 INFO  type.BasicTypeRegistry - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@1c67b54
+2014-12-12 17:15:43,622 INFO  type.BasicTypeRegistry - Type registration [blob] overrides previous : org.hibernate.type.BlobType@1caefb0
+2014-12-12 17:15:43,622 INFO  type.BasicTypeRegistry - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1caefb0
+2014-12-12 17:15:43,622 INFO  type.BasicTypeRegistry - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@3e1d25
+2014-12-12 17:15:43,622 INFO  type.BasicTypeRegistry - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@1eb717e
+2014-12-12 17:15:43,632 INFO  impl.SessionFactoryObjectFactory - Not binding factory to JNDI, no JNDI name configured
+2014-12-12 17:15:43,637 INFO  hbm2ddl.SchemaUpdate - Running hbm2ddl schema update
+2014-12-12 17:15:43,637 INFO  hbm2ddl.SchemaUpdate - fetching database metadata
+2014-12-12 17:15:43,642 INFO  hbm2ddl.SchemaUpdate - updating schema
+2014-12-12 17:15:43,647 INFO  hbm2ddl.SchemaUpdate - schema update complete
+2014-12-12 17:15:43,756 INFO  crawl.InjectorJob - Working directory: /D:/working/application/webapps2/WebCrawler
+2014-12-12 17:15:43,756 INFO  crawl.InjectorJob - Current directory: /D:/working/application/webapps2/WebCrawler/urls
+2014-12-12 17:15:43,756 INFO  crawl.InjectorJob - File name: /D:/working/application/webapps2/WebCrawler/urls/url.txt
+2014-12-12 17:15:43,756 INFO  crawl.InjectorJob - Append -- Key : http://www.emp.hk/ Value : 14111
+2014-12-12 17:15:43,756 INFO  crawl.InjectorJob - Append -- Key : http://www.warnerbros.com/ Value : 14106
+2014-12-12 17:15:43,757 INFO  crawl.InjectorJob - Append -- Key : http://www.foxmovies.com/ Value : 14107
+2014-12-12 17:15:43,757 INFO  crawl.InjectorJob - Append -- Key : http://www.entertainmentone.com/home Value : 14112
+2014-12-12 17:15:43,757 INFO  crawl.InjectorJob - Append -- Key : http://www.universalpictures.com/ Value : 14108
+2014-12-12 17:15:43,757 INFO  crawl.InjectorJob - Append -- Key : http://www.sonypictures.com/ Value : 14109
+2014-12-12 17:15:43,757 INFO  crawl.InjectorJob - Append -- Key : http://mgm.com/ Value : 14122
+2014-12-12 17:15:43,757 INFO  crawl.InjectorJob - Append -- Key : http://www.paramount.com/ Value : 14110
+2014-12-12 17:15:44,214 INFO  connection.CassandraHostRetryService - Downed Host Retry service started with queue size -1 and retry delay 10s
+2014-12-12 17:15:44,267 INFO  service.JmxMonitor - Registering JMX me.prettyprint.cassandra.service_Test Cluster:ServiceType=hector,MonitorType=hector
+2014-12-12 17:15:44,317 INFO  crawl.InjectorJob - CONFIG:  Configuration: core-default.xml, core-site.xml, mapred-default.xml, mapred-site.xml, nutch-default.xml, nutch-site.xml
+2014-12-12 17:15:44,317 INFO  crawl.InjectorJob - InjectorJob: Using class org.apache.gora.cassandra.store.CassandraStore as the Gora storage class.
+2014-12-12 17:15:44,376 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-12-12 17:15:44,376 ERROR security.UserGroupInformation - PriviledgedActionException as:User cause:java.io.IOException: Failed to set permissions of path: \tmp\hadoop-User\mapred\staging\User1911589835\.staging to 0700
+2014-12-12 17:15:44,377 ERROR crawl.InjectorJob - InjectorJob: java.io.IOException: Failed to set permissions of path: \tmp\hadoop-User\mapred\staging\User1911589835\.staging to 0700
+	at org.apache.hadoop.fs.FileUtil.checkReturnValue(FileUtil.java:691)
+	at org.apache.hadoop.fs.FileUtil.setPermission(FileUtil.java:664)
+	at org.apache.hadoop.fs.RawLocalFileSystem.setPermission(RawLocalFileSystem.java:514)
+	at org.apache.hadoop.fs.RawLocalFileSystem.mkdirs(RawLocalFileSystem.java:349)
+	at org.apache.hadoop.fs.FilterFileSystem.mkdirs(FilterFileSystem.java:193)
+	at org.apache.hadoop.mapreduce.JobSubmissionFiles.getStagingDir(JobSubmissionFiles.java:126)
+	at org.apache.hadoop.mapred.JobClient$2.run(JobClient.java:942)
+	at org.apache.hadoop.mapred.JobClient$2.run(JobClient.java:936)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.mapred.JobClient.submitJobInternal(JobClient.java:936)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:550)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:580)
+	at org.apache.nutch.util.NutchJob.waitForCompletion(NutchJob.java:50)
+	at org.apache.nutch.crawl.InjectorJob.run(InjectorJob.java:349)
+	at org.apache.nutch.crawl.InjectorJob.inject(InjectorJob.java:367)
+	at org.apache.nutch.crawl.InjectorJob.run(InjectorJob.java:389)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at org.apache.nutch.crawl.InjectorJob.main(InjectorJob.java:398)
+
+2014-12-12 17:23:48,057 INFO  crawl.GeneratorJob - GeneratorJob: starting at 2014-12-12 17:23:48
+2014-12-12 17:23:48,057 INFO  crawl.GeneratorJob - GeneratorJob: Selecting best-scoring urls due for fetch.
+2014-12-12 17:23:48,057 INFO  crawl.GeneratorJob - GeneratorJob: starting
+2014-12-12 17:23:48,057 INFO  crawl.GeneratorJob - GeneratorJob: filtering: true
+2014-12-12 17:23:48,057 INFO  crawl.GeneratorJob - GeneratorJob: normalizing: true
+2014-12-12 17:23:48,057 INFO  crawl.GeneratorJob - GeneratorJob: topN: 100
+2014-12-12 17:23:48,192 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.AdaptiveFetchSchedule
+2014-12-12 17:23:48,195 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2014-12-12 17:23:48,195 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2014-12-12 17:23:48,510 INFO  connection.CassandraHostRetryService - Downed Host Retry service started with queue size -1 and retry delay 10s
+2014-12-12 17:23:48,571 INFO  service.JmxMonitor - Registering JMX me.prettyprint.cassandra.service_Test Cluster:ServiceType=hector,MonitorType=hector
+2014-12-12 17:23:48,729 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-12-12 17:23:48,730 ERROR security.UserGroupInformation - PriviledgedActionException as:User cause:java.io.IOException: Failed to set permissions of path: \tmp\hadoop-User\mapred\staging\User177186995\.staging to 0700
+2014-12-12 17:23:48,730 ERROR crawl.GeneratorJob - GeneratorJob: java.io.IOException: Failed to set permissions of path: \tmp\hadoop-User\mapred\staging\User177186995\.staging to 0700
+	at org.apache.hadoop.fs.FileUtil.checkReturnValue(FileUtil.java:691)
+	at org.apache.hadoop.fs.FileUtil.setPermission(FileUtil.java:664)
+	at org.apache.hadoop.fs.RawLocalFileSystem.setPermission(RawLocalFileSystem.java:514)
+	at org.apache.hadoop.fs.RawLocalFileSystem.mkdirs(RawLocalFileSystem.java:349)
+	at org.apache.hadoop.fs.FilterFileSystem.mkdirs(FilterFileSystem.java:193)
+	at org.apache.hadoop.mapreduce.JobSubmissionFiles.getStagingDir(JobSubmissionFiles.java:126)
+	at org.apache.hadoop.mapred.JobClient$2.run(JobClient.java:942)
+	at org.apache.hadoop.mapred.JobClient$2.run(JobClient.java:936)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.mapred.JobClient.submitJobInternal(JobClient.java:936)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:550)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:580)
+	at org.apache.nutch.util.NutchJob.waitForCompletion(NutchJob.java:50)
+	at org.apache.nutch.crawl.GeneratorJob.run(GeneratorJob.java:199)
+	at org.apache.nutch.crawl.GeneratorJob.generate(GeneratorJob.java:223)
+	at org.apache.nutch.crawl.GeneratorJob.run(GeneratorJob.java:279)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at org.apache.nutch.crawl.GeneratorJob.main(GeneratorJob.java:287)
+

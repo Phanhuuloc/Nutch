@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+	<property>
+		<name>http.agent.name</name>
+		<value>Quarkbot</value>
+	</property>
+
+	<property>
+		<name>parser.character.encoding.default</name>
+		<value>utf-8</value>
+		<description>The character encoding to fall back to when no other
+			information
+			is available
+		</description>
+	</property>
+
+	<property>
+		<name>http.accept.language</name>
+		<value>ja-jp, en-us,en-gb,en;q=0.7,*;q=0.3</value>
+		<description>Value of the â€œAccept-Languageâ€ request header field.
+			This
+			allows selecting non-English language as default one to retrieve.
+			It
+			is a useful setting for search engines build for certain national
+			group.
+		</description>
+	</property>
+
+	<property>
+		<name>http.agent.url</name>
+		<value>http://www.quarkb2b.com/quarkbot.html</value>
+		<description>A URL to advertise in the User-Agent header. This will
+			appear in parenthesis after the agent name. Custom dictates that this
+			should be a URL of a page explaining the purpose and behavior of this
+			crawler.
+		</description>
+	</property>
+
+	<property>
+		<name>http.agent.version</name>
+		<value>1.0</value>
+		<description>A version string to advertise in the User-Agent
+			header.
+		</description>
+	</property>
+
+	<property>
+		<name>protocol.plugin.check.robots</name>
+		<value>true</value>
+	</property>
+	<property>
+		<name>http.robots.agents</name>
+		<value>Quarkbot,*</value>
+		<description>The agent strings we'll look for in robots.txt files,
+			comma-separated, in decreasing order of precedence. You should
+			put the
+			value of http.agent.name as the first agent name, and keep the
+			default * at the end of the list. E.g.: BlurflDev,Blurfl,*
+		</description>
+	</property>
+
+	<property>
+		<name>storage.data.store.class</name>
+		<value>org.apache.nutch.atexpats.AtexpatCassandraStore</value>
+		<description>Default class for storing data</description>
+	</property>
+
+	<property>
+		<name>plugin.includes</name>
+		<value>protocol-httpclient|protocol-http|urlfilter-regex|parse-tika|index-anchor|scoring-opic|urlnormalizer-(ajax|basic|regex)
+		</value>
+		<description>Regular expression naming plugin directory names to
+			include. Any plugin not matching this expression is excluded.
+			In any
+			case you need at least include the nutch-extensionpoints plugin.
+			By
+			default Nutch includes crawling just HTML and plain text via HTTP,
+			and basic indexing and search plugins. In order to use HTTPS please
+			enable
+			protocol-httpclient, but be aware of possible intermittent
+			problems with the
+			underlying commons-httpclient library.
+		</description>
+	</property>
+
+	<property>
+		<name>http.content.limit</name>
+		<value>-1</value>
+	</property>
+
+	<property>
+		<name>parser.timeout</name>
+		<value>-1</value>
+		<description>Timeout in seconds for the parsing of a document,
+			otherwise treats it as an exception and
+			moves on the the following
+			documents. This parameter is applied to any
+			Parser implementation.
+			Set
+			to -1 to deactivate, bearing in mind that this could cause
+			the parsing
+			to crash because of a very long or corrupted document.
+		</description>
+	</property>
+
+	<property>
+		<name>http.timeout</name>
+		<value>10000</value>
+		<description>The default network timeout, in milliseconds.
+		</description>
+	</property>
+
+	<property>
+		<name>db.fetch.schedule.class</name>
+		<value>org.apache.nutch.crawl.AdaptiveFetchSchedule</value>
+		<description>The implementation of fetch schedule.
+			DefaultFetchSchedule simply
+			adds the original fetchInterval to the
+			last fetch time, regardless of
+			page changes.
+		</description>
+	</property>
+
+	<property>
+		<name>plugin.folders</name>
+		<value>plugins</value>
+		<description>Directories where nutch plugins are located. Each
+			element
+			may be a relative or absolute path. If absolute, it is used
+			as is. If
+			relative, it is searched for on the classpath.
+		</description>
+	</property>
+
+	<!-- <property> <name>hadoop.tmp.dir</name> <value>D:/tmp/hadoop-${user.name}</value> 
+		<description>A base for other temporary directories.</description> </property> -->
+
+	<property>
+		<name>storage.crawl.id</name>
+		<value>12345</value>
+		<description>This value helps differentiate between the datasets that
+			the jobs in the crawl cycle generate and operate on. The value will
+			be input to all the jobs which then will use it as a prefix when
+			accessing to the schemas. The default configuration uses no id to
+			prefix
+			the schemas. The value could also be given as a command line
+			argument
+			to each job.
+		</description>
+	</property>
+	
+	<property>
+		<name>timeout_connection</name>
+		<value>4000</value>
+		<description>Sets the read timeout to a specified timeout, in
+			milliseconds. A non-zero value specifies the timeout when reading
+			from Input stream when a connection is established to a resource. If
+			the timeout expires before there is data available for read, a
+			java.net.SocketTimeoutException is raised. A timeout of zero is
+			interpreted as an infinite timeout.
+		</description>
+	</property>
+
+
+	<property>
+		<name>db.fetch.interval.default</name>
+		<value>25920000</value>
+		<description>The default number of seconds between re-fetches of a
+			page (30 days).
+		</description>
+	</property>
+	<!-- fetcher properties -->
+
+	<property>
+		<name>fetcher.server.delay</name>
+		<value>5.0</value>
+		<description>The number of seconds the fetcher will delay between
+			successive requests to the same server.
+		</description>
+	</property>
+	<property>
+		<name>fetcher.threads.fetch</name>
+		<value>3</value>
+		<description>The number of FetcherThreads the fetcher should use.
+			This
+			is also determines the maximum number of requests that are
+			made at
+			once (each FetcherThread handles one connection). The total
+			number of
+			threads running in distributed mode will be the number of
+			fetcher
+			threads * number of nodes as fetcher has one map task per
+			node.
+		</description>
+	</property>
+
+	<property>
+        <name>fetcher.queue.mode</name>
+        <value>byDomain</value>
+        <description>Determines how the URLs are placed into queues.
+            Allowed values are 'byHost', 'byDomain' and 'byIP'.
+            The value would usually correspond to that of 'partition.url.mode'.
+        </description>
+    </property>
+
+    <property>
+        <name>partition.url.mode</name>
+        <value>byDomain</value>
+        <description>Determines how to partition URLs. Default value is 'byHost',
+            also takes 'byDomain' or 'byIP'.
+        </description>
+    </property>
+
+    <property>
+        <name>fetcher.threads.per.queue</name>
+        <value>1</value>
+        <description>This number is the maximum number of threads that
+            should be allowed to access a queue at one time.</description>
+    </property>
+    
+	<property>
+		<name>fetcher.threads.per.host</name>
+		<value>1</value>
+		<description>This number is the maximum number of threads that
+			should
+			be allowed to access a host at one time.
+		</description>
+	</property>
+	<property>
+		<name>db.update.max.inlinks</name>
+		<value>1000000</value>
+		<description>Maximum number of inlinks to take into account when
+			updating
+			a URL score in the crawlDB. Only the best scoring inlinks are
+			kept.
+		</description>
+	</property>
+	<property>
+		<name>db.ignore.external.links</name>
+		<value>true</value>
+		<description>If true, outlinks leading from a page to external hosts
+			will be ignored. This is an effective way to limit the crawl to
+			include
+			only initially injected hosts, without creating complex
+			URLFilters.
+		</description>
+	</property>
+	<property>
+		<name>db.ignore.internal.links</name>
+		<value>false</value>
+		<description>If true, when adding new links to a page, links from
+			the
+			same host are ignored. This is an effective way to limit the
+			size of
+			the link database, keeping only the highest quality
+			links.
+		</description>
+	</property>
+	<property>
+		<name>db.max.outlinks.per.page</name>
+		<value>0</value>
+		<description>The maximum number of outlinks that we'll process for a
+			page.
+			If this value is nonnegative (>=0), at most
+			db.max.outlinks.per.page
+			outlinks
+			will be processed for a page;
+			otherwise, all outlinks will be processed.
+		</description>
+	</property>
+	<property>
+		<name>fetcher.parse</name>
+		<value>true</value>
+		<description>If true, fetcher will parse content. NOTE: previous
+			releases would
+			default to true. Since 2.0 this is set to false as a
+			safer default.
+		</description>
+	</property>
+
+
+	<property>
+		<name>gora.buffer.read.limit</name>
+		<value>1000</value>
+		<description>The maximum number of buffered Records we wish to
+			read in
+			one batch. @see org.apache.gora.mapreduce.GoraRecordReader
+		</description>
+	</property>
+
+	<property>
+		<name>gora.buffer.write.limit</name>
+		<value>1000</value>
+		<description>Configures (for the Hadoop record writer) the maximum
+			number of
+			buffered Records we wish to regularly flush to the Gora
+			datastore.
+			@see org.apache.gora.mapreduce.GoraRecordWriter.
+		</description>
+	</property>
+	<property>
+		<name>solr.auth</name>
+		<value>true</value>
+		<description>
+			Whether to enable HTTP basic authentication for
+			communicating with Solr.
+			Use the solr.auth.username and
+			solr.auth.password properties to
+			configure
+			your credentials.
+		</description>
+	</property>
+
+	<property>
+		<name>solr.auth.username</name>
+		<!-- <value>vndev</value> -->
+		<value>solr</value>
+	</property>
+
+	<property>
+		<name>solr.auth.password</name>
+		<!-- <value>vndev!@#$</value> -->
+		<value>123</value>
+	</property>
+
+
+	<!-- BEGIN SOLR URL COLLECTION -->
+	<property>
+		<name>solr.url.listing</name>
+		<value>http://192.168.1.241:8983/solr/listing</value>
+	</property>
+
+	<property>
+		<name>solr.url.web.search</name>
+		<!-- <value>http://svr2.atexpats.com:8080/web_search</value> -->
+		<value>http://192.168.1.241:8983/solr/websearch</value>
+	</property>
+
+	<property>
+		<name>solr.url.movie</name>
+		<value>http://192.168.1.241:8983/solr/movie</value>
+	</property>
+
+	<property>
+		<name>solr.url.train</name>
+		<value>http://192.168.1.241:8983/solr/train</value>
+	</property>
+
+	<property>
+		<name>solr.url.flight</name>
+		<value>http://192.168.1.241:8983/solr/flight</value>
+	</property>
+
+	<property>
+		<name>solr.url.channel</name>
+		<value>http://192.168.1.241:8983/solr/channel</value>
+	</property>
+
+	<!-- END SOLR URL COLLECTION -->
+
+	<property>
+		<name>solr.commit.size</name>
+		<value>20</value>
+	</property>
+
+	<property>
+		<name>timeout_connection</name>
+		<value>4000</value>
+	</property>
+
+	<property>
+		<name>channel.list.file</name>
+		<value>/home/dpqhuy/MoviesBuild/conf/channel.txt</value>
+		<description>absolute path of file which contains urls where we can
+			get schedule information</description>
+	</property>
+
+	<property>
+		<name>flight.number.date.find.schedule</name>
+		<value>5</value>
+		<description>Number of date to get flight schedule from current date
+		</description>
+	</property>
+    <property>
+        <name>fetcher.max.crawl.delay</name>
+        <value>-1</value>
+        <description>
+            If the Crawl-Delay in robots.txt is set to greater than this value (in
+            seconds) then the fetcher will skip this page, generating an error
+            report.
+            If set to -1 the fetcher will never skip such pages and will wait the
+            amount of time retrieved from robots.txt Crawl-Delay, however long
+            that
+            might be.
+        </description>
+    </property>
+
+    <property>
+        <name>firefox.browser.driver</name>
+        <value>/usr/bin/firefox"</value>
+        <description>
+          set your firefox browser driver
+        </description>
+    </property>
+
+</configuration>

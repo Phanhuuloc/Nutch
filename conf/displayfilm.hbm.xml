@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="org.apache.nutch.entitybean.DisplayFilm" table="t_display_film">  
+    <id name="film_id" column="film_id" type="java.lang.Integer">  
+     <generator class="assigned"></generator>  
+    </id>  
+            
+    <property name="display_film" column="display_film" type="java.lang.String"></property>  
+    <property name="display_content" column="display_content" type="java.lang.String"></property>
+    <property name="display_description" column="display_description" type="java.lang.String"></property>  
+    <property name="display_series" column="display_series" type="java.lang.String"></property>
+    <property name="language_code" column="language_code" type="java.lang.String"></property>  
+  </class>  
+            
+ </hibernate-mapping>  

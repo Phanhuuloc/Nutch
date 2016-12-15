@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="org.apache.nutch.entitybean.Film" table="t_film">  
+    <id name="id" column="id" type="java.lang.Integer">  
+     <generator class="assigned"></generator>  
+    </id>  
+            
+    <property name="title" column="title" type="java.lang.String"></property>  
+    <property name="content" column="content" type="java.lang.String"></property>
+    <property name="description" column="description" type="java.lang.String"></property>  
+    <property name="total_rated" column="total_rated" type="java.lang.Integer"></property>
+    <property name="rating" column="rating" type="java.lang.Float"></property>  
+    <property name="trailer" column="trailer" type="java.lang.String"></property>
+    <property name="age_limit" column="age_limit" type="java.lang.Integer"></property>  
+    <property name="photo" column="photo" type="java.lang.String"></property>
+    <property name="year_product" column="year_product" type="java.lang.Integer"></property>  
+    <property name="film_duration" column="film_duration" type="java.lang.String"></property>
+    <property name="date" column="date" type="java.lang.Integer"></property>  
+    <property name="last_checked" column="last_checked" type="java.lang.Integer"></property>
+    <property name="rlast_checked" column="rlast_checked" type="java.lang.Integer"></property>  
+    <property name="cms_member_id" column="cms_member_id" type="java.lang.Integer"></property>
+    <property name="producer" column="producer" type="java.lang.String"></property>  
+    <property name="language_code" column="language_code" type="java.lang.String"></property>
+    <property name="dimension" column="dimension" type="java.lang.String"></property>  
+    <property name="series" column="series" type="java.lang.String"></property>
+            
+  </class>  
+            
+ </hibernate-mapping>  

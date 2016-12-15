@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+	<property>
+		<name>http.agent.name</name>
+		<value>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101
+			Firefox/34.0</value>
+	</property>
+
+	<property>
+		<name>parser.character.encoding.default</name>
+		<value>utf-8</value>
+		<description>The character encoding to fall back to when no other
+			information
+			is available
+		</description>
+	</property>
+
+	<property>
+		<name>http.accept.language</name>
+		<value>ja-jp, en-us,en-gb,en;q=0.7,*;q=0.3</value>
+		<description>Value of the “Accept-Language” request header field.
+			This
+			allows selecting non-English language as default one to retrieve.
+			It
+			is a useful setting for search engines build for certain national
+			group.
+		</description>
+	</property>
+
+	<property>
+		<name>storage.data.store.class</name>
+		<value>org.apache.nutch.atexpats.AtexpatCassandraStore</value>
+		<description>Default class for storing data</description>
+	</property>
+
+	<property>
+		<name>plugin.includes</name>
+		<value>protocol-httpclient|protocol-http|urlfilter-regex|parse-tika|index-anchor|scoring-opic|urlnormalizer-basic
+		</value>
+		<description>Regular expression naming plugin directory names to
+			include. Any plugin not matching this expression is excluded.
+			In any
+			case you need at least include the nutch-extensionpoints plugin.
+			By
+			default Nutch includes crawling just HTML and plain text via HTTP,
+			and basic indexing and search plugins. In order to use HTTPS please
+			enable
+			protocol-httpclient, but be aware of possible intermittent
+			problems with the
+			underlying commons-httpclient library.
+		</description>
+	</property>
+
+	<property>
+		<name>http.content.limit</name>
+		<value>-1</value>
+	</property>
+
+	<property>
+		<name>protocol.plugin.check.robots</name>
+		<value>false</value>
+	</property>
+
+	<property>
+		<name>http.robots.agents</name>
+		<value>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101
+			Firefox/34.0, *</value>
+		<description>The agent strings we'll look for in robots.txt files,
+			comma-separated, in decreasing order of precedence. You should
+			put the
+			value of http.agent.name as the first agent name, and keep the
+			default * at the end of the list. E.g.: BlurflDev,Blurfl,*
+		</description>
+	</property>
+
+	<property>
+		<name>parser.timeout</name>
+		<value>-1</value>
+		<description>Timeout in seconds for the parsing of a document,
+			otherwise treats it as an exception and
+			moves on the the following
+			documents. This parameter is applied to any
+			Parser implementation.
+			Set
+			to -1 to deactivate, bearing in mind that this could cause
+			the parsing
+			to crash because of a very long or corrupted document.
+		</description>
+	</property>
+
+	<property>
+		<name>http.timeout</name>
+		<value>10000</value>
+		<description>The default network timeout, in milliseconds.
+		</description>
+	</property>
+
+	<property>
+		<name>db.fetch.schedule.class</name>
+		<value>org.apache.nutch.crawl.AdaptiveFetchSchedule</value>
+		<description>The implementation of fetch schedule.
+			DefaultFetchSchedule simply
+			adds the original fetchInterval to the
+			last fetch time, regardless of
+			page changes.
+		</description>
+	</property>
+
+	<property>
+		<name>plugin.folders</name>
+		<value>/home/tanglinh/workspace/apache-nutch-2.2.1_cassandra/src/plugin</value>
+		<description>Directories where nutch plugins are located. Each
+			element
+			may be a relative or absolute path. If absolute, it is used
+			as is. If
+			relative, it is searched for on the classpath.
+		</description>
+	</property>
+
+	<!-- <property> <name>hadoop.tmp.dir</name> <value>D:/tmp/hadoop-${user.name}</value> 
+		<description>A base for other temporary directories.</description> </property> -->
+
+	<property>
+		<name>storage.crawl.id</name>
+		<value>12345</value>
+		<description>This value helps differentiate between the datasets that
+			the jobs in the crawl cycle generate and operate on. The value will
+			be input to all the jobs which then will use it as a prefix when
+			accessing to the schemas. The default configuration uses no id to
+			prefix
+			the schemas. The value could also be given as a command line
+			argument
+			to each job.
+		</description>
+	</property>
+
+	<property>
+		<name>solr.auth</name>
+		<value>true</value>
+		<description>
+			Whether to enable HTTP basic authentication for
+			communicating with Solr.
+			Use the solr.auth.username and
+			solr.auth.password properties to
+			configure
+			your credentials.
+		</description>
+	</property>
+
+	<property>
+		<name>solr.auth.username</name>
+		<value>admin</value>
+	</property>
+
+	<property>
+		<name>solr.auth.password</name>
+		<value>123456789</value>
+	</property>
+	
+	<property>
+		<name>db.ignore.internal.links</name>
+		<value>true</value>
+		<description>If true, when adding new links to a page, links from
+			the same host are ignored. This is an effective way to limit the
+			size of the link database, keeping only the highest quality
+			links.
+		</description>
+	</property>
+
+
+	<property>
+		<name>timeout_connection</name>
+		<value>4000</value>
+		<description>Sets the read timeout to a specified timeout, in
+			milliseconds. A non-zero value specifies the timeout when reading
+			from Input stream when a connection is established to a resource. If
+			the timeout expires before there is data available for read, a
+			java.net.SocketTimeoutException is raised. A timeout of zero is
+			interpreted as an infinite timeout. </description>
+	</property>
+
+
+	<property>
+		<name>db.ignore.external.links</name>
+		<value>false</value>
+		<description>If true, outlinks leading from a page to external hosts
+			will be ignored. This is an effective way to limit the crawl to
+			include
+			only initially injected hosts, without creating complex URLFilters.
+		</description>
+	</property>
+	
+	<!-- BEGIN SOLR URL COLLECTION -->
+	<property>
+		<name>solr.url.listing</name>
+		<value>http://192.168.1.241:8983/solr/listing</value>
+	</property>
+	
+	<property>
+		<name>solr.url.web.search</name>
+		<value>http://192.168.1.241:8983/solr/websearch</value>
+	</property>
+	
+	<property>
+		<name>solr.url.movie</name>
+		<value>http://192.168.1.241:8983/solr/movie</value>
+	</property>
+	
+	<property>
+		<name>solr.url.train</name>
+		<value>http://192.168.1.241:8983/solr/train</value>
+	</property>
+	
+	<!-- END SOLR URL COLLECTION -->
+
+
+</configuration>

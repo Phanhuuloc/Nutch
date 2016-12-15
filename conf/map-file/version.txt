@@ -1,0 +1,10 @@
+﻿1 - 1;một;one;i;I
+2 - 2;hai;two;ii;II
+3 - 3;ba;three;iii;III
+4 - 4;bốn;four;iv;IV
+5 - 5;năm;five;v;V
+6 - 6;sáu;six;vi;VI
+7 - 7;bày;seven;vii;VII
+8 - 8;tám;eight;viii;VIII
+9 - 9;chín;nine;ix;IX
+10 - 10;mười;ten;x;X
